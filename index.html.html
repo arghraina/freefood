@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Site | foodsafe.com</title>
+    <link rel="stylesheet" href="33.) project 2 css file.css">
+
+    <!-- Font family links :- -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nova+Square&family=Whisper&display=swap"
+        rel="stylesheet">
+
+
+    <!-- To make the website for phone, I will add media query in the following way: -->        
+    <link rel="stylesheet" media="screen and (max-width:878px)"href="33.) project 2 phone.css">
+
+    <style>
+        body {
+    background-color: rgb(235, 224, 210);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#logo img {
+    width: 120px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+#navbar::before {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(177, 253, 70);
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* navigation bar */
+#navbar {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+}
+
+#navbar ul {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 30%;
+    top: 20px;
+}
+
+.item {
+    margin: 0px 4px;
+    list-style: none;
+    padding: 5px 15px;
+}
+
+#navbar ul li a {
+    border: 2px solid rgb(87, 77, 77);
+    box-shadow: 3px 3px 5px 2px black;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    color: rgba(9, 24, 10, 0.808);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.item :hover {
+    transform: translateY(4px);
+    color: black;
+    cursor: pointer;
+}
+
+/* Navbar is complete here. */
+#home {
+    background-color: rgb(156, 234, 162);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.h-primary {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    color: rgb(255, 130, 12);
+    font-size: larger;
+    font-weight: bolder;
+    font-family: cursive;
+    text-decoration: wavy underline green;
+    text-shadow: 1px 1px 1px black;
+}
+
+#btn-1 {
+    margin-bottom: 14px;
+    margin-left: 45.2%;
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    width: 10%;
+    text-shadow: 0.5px 0.5px 0.5px red;
+    background-color: rgb(255, 88, 88);
+    border-radius: 20px;
+}
+
+#btn-1:hover {
+    cursor: pointer;
+    transform: translateY(1px);
+}
+
+.p-primary {
+    font-style: oblique;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.p-secondary {
+    font-weight: bold;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('https://thumbs.dreamstime.com/b/italian-food-background-different-types-pasta-health-vegetarian-concept-top-view-copy-space-italian-food-114155664.jpg') no-repeat center center/cover;
+    height: 53%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* Here ends our Home Section. */
+#service1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#service1 img {
+    display: block;
+    padding-right: 100px;
+    padding-left: 52px;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+#service2 {
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#service2 img {
+    display: block;
+    padding-right: 100px;
+    padding-left: 33px;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+#service3 {
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#service3 img {
+    display: block;
+    padding-right: 100px;
+    padding-left: 195px;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+/* Here our services section is over. */
+
+.clients::before{
+    content:"";
+    position: absolute;
+    top:57%;
+    background: url('https://t3.ftcdn.net/jpg/02/02/17/98/360_F_202179808_o2YPAXShv0rdjQSso7mqOqSprYAvhKEM.jpg');
+    height:130px;
+    width:100%;
+    z-index:-1;
+    opacity:1;
+}
+.clientlogos {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#client1 img {
+    margin-right: 40px;
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+#client2 img {
+    margin-right: 40px;
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+#client3 img {
+    margin-right: 40px;
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+#client4 img {
+    margin-right: 40px;
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+/* Here our clients section is over. */
+
+.contactus{
+    box-sizing: border-box;
+    display: block;
+    margin-top: 20px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inp{
+    margin:3px;
+    border: 2px solid ;
+    border-radius: 4px;
+    box-shadow: -4px 2px 3px grey;
+    font-weight: bolder;
+}
+.foot{
+    text-align: center;
+    background-color: rgb(179, 229, 229);
+    font-weight: bolder;
+}
+
+@media(max-width: 848px){
+    #navbar::before {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    content: "";
+    height: 100%;
+    width: 870px;
+    background-color: rgb(177, 253, 70);
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+#home {
+    background-color: rgb(156, 234, 162);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 190px;
+    width: 850px;
+}
+.p-primary{
+    font-style: oblique;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    padding-left: 83px;
+}
+.p-secondary {
+    font-weight: bold;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+    padding-left: 83px;
+}
+#service3 img {
+    display: block;
+    padding-right: 100px;
+    padding-left: 143px;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+}
+}
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://seeklogo.com/images/F/food-logo-59E5A73AFD-seeklogo.com.png" alt="foodsafe.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome &nbsp; to &nbsp;* FOODSAFE.COM *</h1>
+        <p class="p-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro delectus nisi
+            possimus iure aliquam quasi dolorem illo labore dolore! Architecto cupiditate rerum aliquam dignissimos sint
+            vero, in magnam. Nemo fugiat sequi reiciendis consectetur?</p>
+        <p class="p-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae commodi eveniet at magni
+            aliquid tempora rem laudantium porro nobis cumque?</p>
+        <button id="btn-1">Order Now</button>
+    </section>
+
+    <section class="services">
+        <h1 class="h-primary">
+            Our &nbsp; Services
+        </h1>
+        <div id="serve">
+            <div id="service1">
+                <div><img
+                        src="https://www.dominos.co.in/great-deals/online-pizza-coupons/images/story_images/evd/evd-99.jpg">
+                </div>
+                <div>2 Regular Sized Pizzas at just Rupees 99 each !</div>
+            </div>
+            <div id="service2">
+                <div><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1-GphsfnyEmMgGHUSiT0LE9TbgwfzaAGt-g&usqp=CAU">
+                </div>
+                <div>We provide you food with proper cleanliness!!</div>
+            </div>
+            <div id="service3">
+                <div><img
+                        src="https://5.imimg.com/data5/SELLER/Default/2020/9/BV/VJ/GM/46967566/sdfddsf-jpg-500x500-jpg-500x500.jpg">
+                </div>
+                <div>Now, online deliveries with the facility of cash on delivery also!!!</div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <hr>
+    <section class="clients">
+        <h1 class="h-primary">
+            OUR &nbsp; CLIENTS
+        </h1>
+        <div class="clientlogos">
+            <div id="client1">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTwsE8OpF3chgRewUeB4BEHo-46VoYZZB_jw&usqp=CAU">
+            </div>
+            <div id="client2">
+                <img
+                    src="https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg">
+            </div>
+            <div id="client3">
+                <img
+                    src="https://cdn.dribbble.com/users/525700/screenshots/6344092/lenovo-logo-design_4x.png">
+            </div>
+            <div id="client4">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Skype_logo_%28fully_transparent%29.svg/2560px-Skype_logo_%28fully_transparent%29.svg.png">
+            </div>
+        </div>
+    </section>
+    <section class="contactus">
+        <h1 class="h-primary">CONTACT US : </h1>
+        <div class="contactbox">
+            <form class="form"action="backend.php">
+                <input class="inp" type="text"placeholder="enter your name">
+                <input class="inp" type="number"placeholder="enter your phone number">
+                <input class="inp" type="email"placeholder="enter your email id">
+                <textarea class="inp" placeholder="Any Messages for us: "name="message" id="message"cols='22'rows='9'></textarea>
+                <input class="inp" type="submit"value="submit here">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot">copyright &copy;   (www.foodsafe.com)  &nbsp; &nbsp; All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
